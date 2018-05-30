@@ -1,0 +1,554 @@
+/* Global Attribute */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+	opacity: 0.6;
+	color: #fff;
+	transition-duration: 0.3s;
+}
+a.action-link {
+	background: rgb(0,231,134);
+	border-radius: 4px 0 4px 0;
+	padding: 10px 25px !important;
+}
+.centertext {
+	text-align: center !important;
+}
+
+body {
+	background: rgb(248,249,252);
+}
+
+/* End of Global Attribute */
+
+#introduction {
+	background: rgb(50,55,91);
+	min-height: calc(100vh + 40px);
+	color: #fff;
+}
+  .header-menu {
+	overflow: hidden;
+	padding-top: 40px;
+  }
+    .nav-logo>a {
+    	font-size: 24px;
+    }
+    .navbar {
+    	width: calc(100% / 3);
+    }
+      .navbar>a {
+      	padding: 10px 15px;
+      	margin: 5px;
+      }
+    .navbar-left {
+    	text-align: left;
+    }
+    .navbar-right {
+    	text-align: right;
+    	margin-right: 0 !important;
+    }
+  .introduction-content {
+  	width: 50%;
+  	margin-top: 130px;
+  	float: left;
+  }
+    .introduction-content>h2 {
+    	font-size: 36px;
+    	line-height: 54px;
+    }
+    .introduction-content>p {
+    	font-size: 14px;
+    	line-height: 28px;
+    	margin-bottom: 50px;
+    }
+  .introduction-showcase {
+  	width: 50%;
+  	float: right;
+  	position: relative;
+  }
+    .introduction-showcase>img {
+    	width: 260px;
+    	position: absolute;
+    	top: 20px;
+    	left: 0;
+    	right: 0;
+    	margin: auto;
+    }
+
+
+#benefit {
+	background: rgb(248,249,252);
+}
+  .benefit-tab {
+  	padding: 65px 80px;
+  	background: #fff;
+  	border-radius: 8px;
+  	position: relative;
+  	top: -50px;
+  	overflow: hidden;
+  }
+    .benefit-feature {
+    	width: calc((100% /3) - (160px /3));
+    	float: left;
+    	margin-right: 80px;
+    }
+    .benefit-feature:last-child {
+    	margin-right: 0;
+    }
+    .benefit-feature>.feature-icon {
+    	width: 72px;
+    	height: 72px;
+    	background: rgb(227,253,242);
+    	border-radius: 8px;
+    }
+    .benefit-feature>.feature-icon>i {
+    	display: block;
+		color: rgb(0,231,134);
+		font-size: 40px;
+	    line-height: 72px;
+	    text-align: center;
+    }
+	.benefit-feature>p.feature-highlight {
+		text-transform: capitalize;
+		margin: 30px 0;
+	}
+	.benefit-feature>hr {
+		width: 60px;
+		height: 4px;
+		margin-left: 0;
+		background: rgb(0,231,134);
+	}
+
+
+#pricing {
+	padding: 100px 0;
+}
+  #pricing>div>h2 {
+  	text-align: center;
+  	color: rgb(54,46,94);
+  	font-size: 36px;
+  	line-height: 54px;
+  	font-weight: 700;
+  }
+  .pricing-action {
+  	padding: 50px 0;
+    position: relative;
+    left: 50%;
+    margin-left: -212.58px;
+    overflow: hidden;
+    max-width: 470px;
+  }
+	.pricing-action>button {
+		padding: 25px 40px;
+		color: rgb(0,231,134);
+		background: #fff;
+		-webkit-appearance: none;
+		border: 1px solid rgb(149,255,218);
+		text-transform: uppercase;
+		font-weight: 700;
+		border-radius: 6px 0 0 6px;
+		float: left;
+	}
+	.pricing-action>button:last-child {
+		border-radius: 0 6px 6px 0;
+		border-left: none;
+	}
+	.pricing-action>button.active {
+		background: rgb(238,255,248);
+	}
+  .pricing-detail {
+
+  }
+    .pricing-table {
+    	width: calc((100% / 3) - 20px);
+    	margin: 10px;
+    	padding: 60px;
+    	text-align: center;
+    	float: left;
+    	color: rgb(102,116,156);
+    }
+    .pricing-table>h4 {
+    	color: rgb(53,45,93);
+    }
+    .pricing-table>.price {
+    	font-size: 50px;
+    	color: rgb(0,231,134);
+    	line-height: 75px;
+    }
+    .pricing-table>p {
+    	line-height: 21px;
+    }
+    .pricing-table:after {
+    	clear: both;
+    }
+    .pricing-table.active {
+    	border-top: 3px solid rgb(0,128,255);
+    	background-color: rgb(255,255,255);
+    	box-shadow: 0 2px 24px rgba(0,0,0,0.1);
+    }
+    .pricing-table>.features {
+    	margin-top: 50px;
+    	position: relative;
+    	height: 200px;
+    }
+    .pricing-table>.features>p {
+		line-height: 28px;
+    }
+    .pricing-table>.features>.price-btn {
+		clear: both;
+	    display: block;
+	    position: absolute;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    text-transform: uppercase;
+	    box-shadow: 0 0 20px rgba(0,231,134,0.8);
+    }
+
+
+#testimonials {
+	margin: 80px 0;
+	min-height: 600px;
+	overflow: hidden;
+}
+  .testimonials-headline {
+  	background: url("images/testi.png");
+	background-repeat: no-repeat;
+	height: 600px;
+	width: 600px;
+    background-position-x: 160px;
+    background-size: 400px;
+	float: left;
+  }
+	.testimonials-headline>h1 {
+	padding-top: 55px;
+	padding-left: 205px;
+	width: 460px;
+	color: rgb(53,45,93);
+	line-height: 54px;
+	}
+  .testimonials-message {
+  	float: left;
+  	width: calc( 100% - 600px);
+  	height: 960px;
+  	background-color: rgb(50,55,91);
+  }
+    .message-group {
+    	margin-top: 40px;
+    	padding: 210px 0;
+    	width: 2000px;
+    	overflow: hidden;
+    	margin-left: -200px;
+    }
+      .quote-tab {
+      	padding: 80px 50px;
+      	width: 420px;
+      	height: 500px;
+      	margin: 0 20px;
+      	background: rgb(244,244,246);
+      	border-radius: 6px;
+      	position: relative;
+      	float: left;
+      }
+      .quote-tab .st0 {
+      	fill: rgb(0,232,134);
+      }
+      .quote-tab.active {
+      	background: rgb(0,234,134);
+      }
+      .quote-tab.active>p {
+      	color: #fff;
+      }
+      .quote-tab.active .st0 {
+      	fill: rgb(255,255,255);
+      }
+      	.quote-tab.active>.quote-writer>.name {
+      		color: #fff;
+      	}
+      	.quote-tab.active>.quote-writer>.seperator {
+      		color: #fff;
+      	}
+      .quote-tab>img {
+      	width: 48px;
+      }
+      .quote-tab>p {
+      	margin-top: 30px;
+      	line-height: 28px;
+      	font-size: 14px;
+      	color: rgb(103,118,157);
+      }
+      .quote-writer {
+      	position: absolute;
+      	bottom: 70px;
+      	left: 50px;
+      }
+        .quote-writer>.name {
+        	float: left;
+        	display: inline-block;
+        	color: rgb(12,17,93);
+        	font-weight: 700;
+        }
+        .quote-writer>.seperator {
+        	float: left;
+        	display: inline-block;
+        	color: rgb(12,17,93);
+        	font-weight: 700;
+        	margin: 0 10px;
+        }
+        .quote-writer>.company {
+        	float: left;
+        	display: inline-block;
+        	color: rgb(146,157,184);
+        }
+
+
+#client {
+	padding: 80px 0;
+}
+  #client h2 {
+  	text-align: center;
+  	text-transform: uppercase;
+  	color: rgb(12,17,93);
+  	font-weight: 700;
+  	font-size: 20px;
+  }
+  #client .copyright {
+  	padding: 50px 0;
+  	color: rgb(103,118,157);
+  	text-align: center;
+  }
+  #client .client-list {
+  	width: 100%;
+  	padding: 50px 0;
+  }
+    .client-list>.client {
+    	width: calc((100% / 6) - 30px);
+    	float: left;
+    	display: inline-block;
+    	margin: 0 15px;
+    }
+      .client>img {
+      	max-width: 100%;
+      }
+  #client .footer-nav {
+	text-align: center;
+    overflow: hidden;
+    width: 320px;
+    left: 50%;
+    position: relative;
+    margin-left: -160px;
+  }
+    .footer-nav>a {
+    	color: rgb(103,118,157);
+    	float: left;
+    }
+    .footer-nav>.seperator {
+    	margin: 0 15px;
+    	float: left;
+    }
+
+
+/*---- RESPONSIVE ------*/
+@media screen and (max-device-width: 480px) and (min-device-width: 320px) {
+
+	.nav-logo {
+		display: block !important;
+		width: 100%;
+		text-align: center;
+	}
+	.navbar {
+		display: none;
+	}
+	
+	.introduction-showcase {
+		width: 100%;
+	    display: block;
+	    clear: both;
+	    float: none;
+	    height: 525px;
+	}
+	.introduction-content {
+		width: 100%;
+		display: block;
+		float: none;
+		margin-top: 60px;
+		text-align: center;
+	}
+	  .introduction-content>h2 {
+	  	font-size: 24px;
+	  	line-height: 36px;
+	  }
+	  .introduction-content>p {
+	  	margin-bottom: 90px;
+	  }
+	
+
+	/* #benefit */
+	.benefit-tab {
+		padding: 30px 15px;
+	}
+	  .benefit-feature {
+		display: block;
+		width: 100%;
+		margin-right: 0;
+		text-align: center;
+		margin-bottom: 60px;
+	  }
+	  .benefit-feature:last-child {
+	  	margin-bottom: 0;
+	  }
+	    .benefit-feature>.feature-icon {
+	    	margin: auto;
+	    }
+	    .benefit-feature>hr {
+	    	margin: 20px auto;
+	    }
+
+	/* #pricing */
+	#pricing {
+		padding: 40px 0;
+	}
+	#pricing>div>h2 {
+		font-size: 26px;
+        line-height: 39px;
+	}
+	.pricing-action {
+		width: 300px;
+		padding: 30px 0;
+		margin-left: -141.2px;
+	}
+	  .pricing-action>button {
+	  	padding: 15px;
+	    font-weight: 500;
+	    font-size: 12px;
+	  }
+
+	    .pricing-table {
+	    	width: 100%;
+	    	padding: 30px 15px;
+	    	margin: 0;
+	    }
+	
+	/* #testimonials */
+	#testimonials {
+		margin: 40px 0;
+	}
+	.testimonials-headline {
+		width: 100%;
+		background-position-x: 10px;
+    	background-size: 100px;
+    	height: auto;
+    	margin-bottom: 30px;
+	}
+	  .testimonials-headline>h1 {
+	  	padding-top: 20px;
+    	padding-left: 30px;
+    	width: auto;
+	  }
+	.testimonials-message {
+		width: 100%;
+		height: auto;
+		padding: 40px 0;
+	}
+	  .message-group {
+	  	padding: 0;
+	  	margin-left: 0;
+	  	margin-top: 0;
+	  }
+	    .quote-tab {
+	    	padding: 30px 15px;
+	    	width: calc(100vw - 20px);
+	    	margin: 0 10px;
+	    	height: 400px;
+	    }
+	      .quote-tab>p {
+	      	font-size: 16px;
+		    line-height: 32px;
+		    margin-top: 10px;
+	      }
+	      .quote-tab>.quote-writer {
+	      	bottom: 30px;
+    		left: 15px;
+    		font-size: 18px;
+	      }
+
+	/* #client */
+	#client {
+		padding: 30px 0;
+	}
+	  .client-list {
+	  	padding: 20px 0 !important;
+	  	overflow: hidden;
+	  }
+	    .client-list>.client {
+	    	width: calc(50% - 30px);
+	    	margin: 20px 15px;
+	    }
+	  .copyright {
+	  	padding: 20px 0 !important;
+	  }
+	  .footer-nav {
+	  	padding: 0 15px;
+	  	margin-top: 30px;
+	  	width: 300px !important;
+	  	margin-left: -150px !important;
+	  }
+	    .footer-nav>.seperator {
+	    	margin: 0 8px;
+	    }
+}
+
+@media screen and (max-device-width: 1025px) and (min-device-width: 568px) {
+	
+	#introduction {
+		padding-bottom: 100px;
+		height: auto;
+		min-height: 800px;
+	}
+	  .introduction-content {
+		width: calc(100% - 380px);
+		margin-top: 60px;
+	  }
+	    .introduction-content>h2 {
+	    	font-size: 32px;
+	    	line-height: 48px;
+	    }
+	  .introduction-showcase {
+		width: 320px;
+    	height: 550px;
+	  }
+
+
+	.benefit-tab {
+		padding: 40px 30px;
+	}
+	  .benefit-feature {
+		text-align: center;
+	  }
+	    .benefit-feature>.feature-icon {
+	    	margin: auto;
+	    }
+	    .benefit-feature>hr {
+	    	margin: 20px auto;
+	    }
+
+	.pricing-table {
+		padding: 30px 15px;
+	}
+	.pricing-table>.features {
+		height: 240px;
+	}
+
+	.client-list>.client {
+		width: calc((100% / 3) - 30px);
+		margin: 20px 15px;
+	}
+}
